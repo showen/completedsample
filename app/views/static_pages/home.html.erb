@@ -1,4 +1,7 @@
 <% provide(:title, 'Home') %>
+
+<%= link_to image_tag("sc.png", alt: "Rails"), 'http://searleconsulting.com/' %>
+
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
@@ -19,17 +22,15 @@
   </div>  
 <% else %>
   <div class="center hero-unit">
-    <h1>Welcome to Searle Consulting</h1>
+    <h1>Welcome</h1>
 
     <h2>
       This is the 
       <a href="http://searleconsulting/">Searle Consulting</a>
-       Ruby on Rails sample application.
+       Ruby on Rails test application site.
     </h2>
 
     <%= link_to "Sign up now!", signup_path, 
                                 class: "btn btn-large btn-primary" %>
   </div>
-
-  <%= link_to image_tag("sc.png", alt: "Rails"), 'http://searleconsulting.com/' %>
 <% end %> 
