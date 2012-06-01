@@ -1,6 +1,5 @@
 <% provide(:title, 'Home') %>
 
-<%= link_to image_tag("sc.png", alt: "Rails"), 'http://searleconsulting.com/' %>
 
 <% if signed_in? %>
   <div class="row">
@@ -22,7 +21,8 @@
   </div>  
 <% else %>
   <div class="center hero-unit">
-    <h1>Welcome</h1>
+    <h1>Welcome to</h1><br>
+	<%= link_to image_tag("sc.png", alt: "Rails"), 'http://searleconsulting.com/' %><br><br><br>
 
     <h2>
       This is the 
